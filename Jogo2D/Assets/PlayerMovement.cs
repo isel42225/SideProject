@@ -6,17 +6,33 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController2D controller;
 
-    float runSpeed = 40f;
+    float runSpeed = 60f;
     float horizontalMove = 0f;
+    bool jump = false;
+    bool crouch = false;
 
     // Update is called once per frame
     void Update()
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+
+        if (Input.GetButtonDown("Jump"))
+        {
+            jump = true;
+        }
+        if (Input.GetButtonDown("Crouch")){
+            crouch = true;
+        }
+        else if (Input.GetButtonUp("Crouch"))
+        {
+            crouch = false;
+        }
     }
      void FixedUpdate()
     {
-        controller.Move(horizontalMove*Time.fixedDeltaTime,false,false);
+        controller.Move(horizontalMove*Time.fixedDeltaTime, crouch, jump);
+        Debug.Log(crouch);
+        jump = false;
         
     }
 }
