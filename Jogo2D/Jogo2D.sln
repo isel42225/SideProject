@@ -3,6 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{D234DD20-71CE-88CB-00E9-5B1B71E952A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AstarPathfindingProject", "AstarPathfindingProject.csproj", "{29E22572-5DDC-93AC-6735-14F416349EEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AstarPathfindingProjectEditor", "AstarPathfindingProjectEditor.csproj", "{FC00DA3A-E947-56E5-D5AF-D984E3AB7795}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackageToolsEditor", "PackageToolsEditor.csproj", "{C516CC7C-CFC5-593A-5545-808BDDA95D75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +19,18 @@ Global
 		{D234DD20-71CE-88CB-00E9-5B1B71E952A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D234DD20-71CE-88CB-00E9-5B1B71E952A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D234DD20-71CE-88CB-00E9-5B1B71E952A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29E22572-5DDC-93AC-6735-14F416349EEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29E22572-5DDC-93AC-6735-14F416349EEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29E22572-5DDC-93AC-6735-14F416349EEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29E22572-5DDC-93AC-6735-14F416349EEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC00DA3A-E947-56E5-D5AF-D984E3AB7795}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC00DA3A-E947-56E5-D5AF-D984E3AB7795}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC00DA3A-E947-56E5-D5AF-D984E3AB7795}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC00DA3A-E947-56E5-D5AF-D984E3AB7795}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C516CC7C-CFC5-593A-5545-808BDDA95D75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C516CC7C-CFC5-593A-5545-808BDDA95D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C516CC7C-CFC5-593A-5545-808BDDA95D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C516CC7C-CFC5-593A-5545-808BDDA95D75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
