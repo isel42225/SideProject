@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\CharacterController2D.cs" />
+    <Compile Include="Assets\Player_Atributes.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
     <Compile Include="Assets\Posicao.cs" />
     <Compile Include="Assets\SetTarget.cs" />
