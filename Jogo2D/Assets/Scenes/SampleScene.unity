@@ -154,7 +154,7 @@ TilemapCollider2D:
   m_GameObject: {fileID: 508445470}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6a8b0b2bff92caf4294be05b62a7985b, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1683,7 +1683,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1332319342}
-  offset: {x: 15.19, y: 2.09, z: -10}
+  offset: {x: 9.89, y: 2.09, z: -10}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -2140,11 +2140,10 @@ GameObject:
   - component: {fileID: 1332319344}
   - component: {fileID: 1332319343}
   - component: {fileID: 1332319347}
-  - component: {fileID: 1332319346}
   - component: {fileID: 1332319345}
   - component: {fileID: 1332319348}
   - component: {fileID: 1332319340}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player_Idle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2273,7 +2272,7 @@ MonoBehaviour:
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 311
   m_GroundCheck: {fileID: 1415855147}
   m_CeilingCheck: {fileID: 1548054029}
   m_CrouchDisableCollider: {fileID: 1332319347}
@@ -2309,8 +2308,8 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: CharacterController2D+BoolEvent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!58 &1332319345
-CircleCollider2D:
+--- !u!70 &1332319345
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2322,25 +2321,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.19}
-  serializedVersion: 2
-  m_Radius: 0.69
---- !u!58 &1332319346
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1332319339}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 6a8b0b2bff92caf4294be05b62a7985b, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.34}
-  serializedVersion: 2
-  m_Radius: 0.86
+  m_Offset: {x: -0.21, y: -0.87}
+  m_Size: {x: 1, y: 2}
+  m_Direction: 0
 --- !u!61 &1332319347
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2390,7 +2373,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1415855147}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ground Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2420,7 +2403,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1548054029}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Celling Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2502,7 +2485,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1705986712
 MonoBehaviour:
   m_ObjectHideFlags: 0
