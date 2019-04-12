@@ -63,6 +63,7 @@
     <Compile Include="Assets\CharacterController2D.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
     <Compile Include="Assets\Posicao.cs" />
+    <Compile Include="Assets\SetTarget.cs" />
     <None Include="Assets\Ninja Files\Read Me.txt" />
     <None Include="Assets\Dragon Warrior Files\Read Me.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
