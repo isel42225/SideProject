@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController2D controller;
     public Animator animator;
+    public Animation anim;
 
     float runSpeed = 60f;
     float horizontalMove = 0f;
@@ -21,6 +22,16 @@ public class PlayerMovement : MonoBehaviour
         {
             jump = true;
             animator.SetBool("IsJumping", true);
+        }
+        if (Input.GetButtonDown("PressQ"))
+        {
+            anim["Player_SwordDash"].wrapMode = WrapMode.Once;
+            anim.Play("Player_SwordDash");
+            animator.SetBool("PressQ", true);
+        }
+        else if (Input.GetButtonUp("PressQ"))
+        {
+            animator.SetBool("PressQ", false);
         }
         if (Input.GetButtonDown("Crouch")){
             crouch = true;

@@ -19,6 +19,8 @@ public class SetTarget : MonoBehaviour
 
     public bool reachedEndOfPath;
 
+    public float minimumDistance ;
+
     public void Start()
     {
         seeker = GetComponent<Seeker>();
@@ -46,6 +48,7 @@ public class SetTarget : MonoBehaviour
 
     public void Update()
     {
+
         if (path == null)
         {
             // We have no path to follow yet, so don't do anything
@@ -81,9 +84,9 @@ public class SetTarget : MonoBehaviour
             else
             {
                 break;
-            }
+            }       
         }
-
+        
         // Slow down smoothly upon approaching the end of the path
         // This value will smoothly go from 1 to 0 as the agent approaches the last waypoint in the path.
         var speedFactor = reachedEndOfPath ? Mathf.Sqrt(distanceToWaypoint / nextWaypointDistance) : 1f;
@@ -96,9 +99,16 @@ public class SetTarget : MonoBehaviour
 
         // Move the agent using the CharacterController component
         // Note that SimpleMove takes a velocity in meters/second, so we should not multiply by Time.deltaTime
-        
+        if (Vector3.Distance(transform.position, targetPosition.position) < minimumDistance)
+        {
+            transform.position = transform.position;
+        }
+        else
+        {
+            transform.position += velocity * Time.deltaTime;
+        }
 
         // If you are writing a 2D game you may want to remove the CharacterController and instead use e.g transform.Translate
-        transform.position += velocity * Time.deltaTime;
+
     }
 }
